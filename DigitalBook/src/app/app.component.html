@@ -1,0 +1,37 @@
+<header *ngIf="showHomePage">
+    <div class="p-5 text-center bg-image" style="
+      background-image: url('https://img.freepik.com/premium-photo/opened-book-bible-background_112554-164.jpg?w=360');
+      height: 600px;
+    ">
+        <div class="mask" style="padding-top: 10%;">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <button class="btn btn-outline-black btn-lg btn-primary" routerLink="/author" (click)="diableHome()">Author</button>
+                    <br>
+                    <ul>
+                        <li>Features</li>
+                        <li>Subscribe Book</li>
+                        <li>Get books By emailid</li>
+                        <li>Get book By payment</li>
+                        <li>UnSubscribe Book</li>
+                    </ul>
+                </div>
+                <div class="text-white">
+                    <button class="btn btn-outline-black btn-lg btn-primary" routerLink="/reader" (click)="diableHome()">Reader</button>
+                    <br>
+                    <ul>
+                        <li>Features</li>
+                        <li>Publish Book</li>
+                        <li>Edit book </li>
+                        <li>Get published books</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<router-outlet></router-outlet>
+<!--<div>
+    <app-reader></app-reader>
+    <router-outlet></router-outlet>
+</div>-->
